@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* shared styles */
+
+
+
+
+
+/* header styles */
+
+.text-gray{
+    color: #424242; ;
+}
+
+.text-ligth-gray{
+    color: #727272;
+}
+/* navbar styles */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+ 
+}
+
+.nav-link{
+       text-decoration: none;
+       font-weight: 500;
+
+
+}
+
+.bg-ligth{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner h1{
+    max-width: 862px;
+    margin: 0 auto;
+    /* height সরিয়ে দাও */
+}
+
+
+.banner{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.Primary-btn{
+    padding: 20px 25px;
+    font-size: 16px;
+    font-weight: 131;
+    height: 23;
+    color: #fff;
+   background: rgba(255, 144, 14, 1);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.banner img{
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+
+
+@media screen and (max-width: 570) {
+    .navbar  .nav-links{
+        flex-direction: column;
+    }
+}

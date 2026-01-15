@@ -1,0 +1,208 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* ====== HEADER ====== */
+.header {
+  background: rgba(255, 144, 14, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 120px;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav li a:hover {
+  color: #FF900E;
+  transform: scale(1.1);
+}
+
+/* ====== BRAND ARTICLE ====== */
+.brand-artical {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3.75rem;
+}
+
+.brand-artical h1 {
+  color: rgba(19, 19, 19, 1);
+  transition: color 0.3s ease;
+}
+
+.brand-artical h1:hover {
+  color: #FF900E;
+}
+
+.baneer-text {
+  color: rgba(114, 114, 114, 1);
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.primary-btn {
+  padding: 1.25rem;
+  font-size: 1.44rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #FF900E;
+  color: #FFFFFF;
+  margin: 32px;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #e67e00;
+  transform: scale(1.05);
+}
+
+.brand-artical img {
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-artical img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ====== TEAM FEATURES ====== */
+.team-featurs {
+  display: flex;
+  align-items: center;
+  gap: 73px;
+  max-width: 1140px;
+  margin: 85px auto;
+}
+
+.worck-pic {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.worck-pic img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.worck-pic img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.work-lekha {
+  padding-left: 4.6rem;
+}
+
+.work-lekha p {
+  padding-top: 1.5rem;
+}
+
+.ligth {
+  color: #727272;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.drack {
+  color: #131313;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.ligth-oreng {
+  color: #FF900E;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.feature-text {
+  color: rgba(114, 114, 114, 1);
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+/* ====== RESPONSIVE ====== */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav > ul {
+    flex-direction: column;
+  }
+
+  .brand-artical {
+    padding: 20px;
+  }
+
+  .brand-artical h1 {
+    font-size: 32px;
+  }
+
+  .team-featurs {
+    flex-direction: column;
+    margin: 40px auto;
+  }
+
+  .worck-pic {
+    grid-template-columns: 1fr;
+  }
+
+  .work-lekha {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .ligth,
+  .drack,
+  .ligth-oreng {
+    font-size: 28px;
+  }
+
+  .primary-btn {
+    margin: 20px 0;
+  }
+}
